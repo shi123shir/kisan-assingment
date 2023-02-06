@@ -9,8 +9,7 @@ const app = express()
 app.use(express.json())
 
 mongoose.set('strictQuery', true);
-
-mongoose.connect(process.env.MongoDB_url,{
+mongoose.connect("mongodb+srv://shishir1912-DB:F85ml8mUXi1MrEKV@cluster0.2ta5zuw.mongodb.net/smallassinment",{
     useNewUrlParser: true,
 }).then(()=> console.log("mongodb connected successfully"))
 .catch((err) => err)
